@@ -10,7 +10,7 @@
 
 .left-side {
     font-size: 1.7rem;
-    padding-left: 10%;
+    margin-left: 10%;
 }
 
 .right-side {
@@ -48,6 +48,7 @@
 
     .navbar {
         background-color: #fff;
+        width: 100%;
 
     }
 
