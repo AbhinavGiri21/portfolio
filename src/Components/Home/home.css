@@ -50,7 +50,7 @@
 
 @media(max-width: 768px) {
     .container {
-        top: 15%;
+        top: 20%;
         flex-direction: column;
         width: 95%;
         margin-left: 5%;
