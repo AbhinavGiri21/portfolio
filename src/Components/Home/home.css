@@ -1,0 +1,82 @@
+.container {
+    position: absolute;
+    margin-top: 14%;
+    margin-left: 10%;
+    display: flex;
+    width: 80%;
+}
+
+.welcome {
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.name {
+    color: #ff014f;
+}
+
+.details {
+    font-size: 2.9rem;
+}
+
+.left-data {
+    width: 50%;
+}
+
+.right-data {
+    margin-top: 7rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.neon-button {
+    width: 10rem;
+    height: 4rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff014f;
+    background-color: transparent;
+    border: 2px solid #ff014f;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 10px #ff014f, 0 0 20px #ff014f, 0 0 30px #ff014f;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        top: 10%;
+        margin-left: 8%;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-data,
+    .right-data {
+        width: 100%;
+    }
+
+    .welcome {
+        font-size: 1rem;
+    }
+
+    .details {
+        font-size: 1.8rem;
+    }
+
+    .right-data {
+        margin-top: 0;
+    }
+
+    .neon-button {
+        width: 12rem;
+        height: 4rem;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
