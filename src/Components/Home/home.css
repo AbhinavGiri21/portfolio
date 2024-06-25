@@ -48,7 +48,7 @@
     box-shadow: 0 0 10px #ff014f, 0 0 20px #ff014f, 0 0 30px #ff014f;
 }
 
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
     .container {
         top: 15%;
         flex-direction: column;
