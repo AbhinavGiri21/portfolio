@@ -2,14 +2,126 @@
     position: absolute;
     top: 80%;
     display: flex;
-    justify-content: center;
+    margin-left: 8%;
+    justify-content: space-between;
     align-items: center;
+    padding-bottom: 30px;
+    gap: 3rem;
+    margin-right: 8%;
 }
 
 .about .content {
     padding: 10px;
     border-radius: 10px;
-    width: 70%;
-    background-color: rgba(200, 196, 196, 0.5);
+    width: 50%;
+    height: 25rem;
+    background-color: rgba(201, 204, 205, 0.2);
     backdrop-filter: blur(15px);
+
+}
+
+.about .content h2,
+.me {
+    margin-left: 35px;
+
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons p {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: grey;
+    transition: color 0.3s;
+}
+
+.social-icons .github:hover {
+    color: black;
+}
+
+.social-icons .linkedln:hover {
+    color: rgb(7, 54, 240);
+}
+
+.about .skills {
+    height: 25rem;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(201, 204, 205, 0.2);
+    backdrop-filter: blur(15px);
+    width: 50%;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+}
+
+.section-btn.active {
+    background-color: rgba(201, 204, 205, 0.2);
+}
+
+.section-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.section-content.active {
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.section-content h3 {
+    margin-left: 39px;
+}
+
+.skills h2,
+.section button {
+    margin-left: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .about .content,
+    .about .skills {
+        width: 100%;
+        height: auto;
+    }
+
+    .section button {
+        margin-left: 0;
+    }
+
+    .section-btn {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
 }
