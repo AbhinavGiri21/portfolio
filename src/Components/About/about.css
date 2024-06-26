@@ -22,7 +22,7 @@
 
 .about .content h2,
 .me {
-    margin-left: 35px;
+    margin-left: 20px;
 
 }
 
@@ -63,6 +63,8 @@
 
 .skills ul {
     list-style: none;
+    margin-left: 20px;
+    padding: 0;
 }
 
 .section {
@@ -94,19 +96,18 @@
 }
 
 .section-content h3 {
-    margin-left: 39px;
+    margin-left: 20px;
 }
 
 .skills h2,
 .section button {
-    margin-left: 35px;
+    margin-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
     .about {
         flex-direction: column;
         padding: 1rem;
-        width: 100%;
         margin: 0;
     }
 
@@ -117,7 +118,7 @@
     }
 
     .section button {
-        margin-left: 0;
+        margin-left: 10px;
     }
 
     .section-btn {
