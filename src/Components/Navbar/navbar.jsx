@@ -20,8 +20,6 @@ const Nav = () => {
                 <div className={`nav-links ${isOpen ? 'active' : ''}`}>
                     <ul>
                         <li><NavLink to="/" className="link" onClick={toggleMenu}>HOME</NavLink></li>
-                        <li><NavLink to="/about" className="link" onClick={toggleMenu}>ABOUT</NavLink></li>
-                        <li><NavLink to="/experience" className="link" onClick={toggleMenu}>EXPERIENCE</NavLink></li>
                         <li><NavLink to="/projects" className="link" onClick={toggleMenu}>PROJECTS</NavLink></li>
                         <li><NavLink to="/contact" className="link" onClick={toggleMenu}>CONTACT</NavLink></li>
                     </ul>

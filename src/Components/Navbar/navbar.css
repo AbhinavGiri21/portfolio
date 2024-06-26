@@ -16,7 +16,7 @@
 .right-side {
     display: flex;
     align-items: center;
-    padding-right: 5%;
+    margin-right: 5%;
 }
 
 .navbar .right-side .nav-links ul {
@@ -39,6 +39,12 @@
     display: none;
     cursor: pointer;
     margin-left: auto;
+}
+
+@media(min-width:768px)and (max-width:830px) {
+    .left-side {
+        margin-left: 5%;
+    }
 }
 
 @media screen and (max-width: 768px) {

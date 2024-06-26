@@ -1,0 +1,15 @@
+.about {
+    position: absolute;
+    top: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .content {
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    background-color: rgba(200, 196, 196, 0.5);
+    backdrop-filter: blur(15px);
+}
