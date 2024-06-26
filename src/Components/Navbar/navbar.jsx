@@ -14,7 +14,7 @@ const Nav = () => {
     return (
         <div className="navbar">
             <div className="left-side">
-                <p>Portfolio</p>
+                <p><NavLink to="/">Portfolio</NavLink></p>
             </div>
             <div className="right-side">
                 <div className={`nav-links ${isOpen ? 'active' : ''}`}>

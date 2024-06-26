@@ -1,0 +1,81 @@
+.footer-container {
+    color: #161616;
+    background: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-link a {
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.social-link a .instagram {
+    font-size: 2rem;
+    color: #E1306C;
+}
+
+.social-link a .linkedln {
+    font-size: 2rem;
+    color: #0077b5;
+}
+
+.social-link a .github {
+    font-size: 2rem;
+    color: #161616;
+}
+
+.social-link a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-container h3 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        padding: 15px 0;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 370px) {
+    .footer-container {
+        padding: 10px 0;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 290px) {
+    .footer-container {
+        padding: 5px 0;
+    }
+
+    .copyright {
+        font-size: 8px;
+    }
+}
