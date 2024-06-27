@@ -87,6 +87,10 @@
         display: none;
     }
 
+    .link::after {
+        display: none;
+    }
+
     .navbar {
         height: 60px;
     }

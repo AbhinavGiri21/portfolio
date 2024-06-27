@@ -55,7 +55,7 @@
 }
 
 .git {
-    width: 7rem;
+    width: auto;
     position: relative;
     height: 2rem;
     border: 3px ridge #149CEA;

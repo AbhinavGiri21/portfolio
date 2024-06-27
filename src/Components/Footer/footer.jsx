@@ -20,7 +20,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="copyright">
-                    &copy; {new Date().getFullYear()} ALL RIGHTS RESERVED
+                    &copy; {new Date().getFullYear()} | ALL RIGHTS RESERVED
                 </div>
             </div>
         </footer>
