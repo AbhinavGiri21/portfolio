@@ -1,10 +1,17 @@
+footer {
+    position: absolute;
+    /* left: 0;
+    right: 0; */
+    bottom: 0;
+    width: 100%;
+}
+
 .footer-container {
     color: #161616;
     background: #fff;
     text-align: center;
     padding: 5px 0;
 }
-
 
 .social-link {
     display: flex;

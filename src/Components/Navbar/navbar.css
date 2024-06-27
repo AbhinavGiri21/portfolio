@@ -1,17 +1,22 @@
+.nav-container {
+    width: 100%;
+}
+
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    background-color: #fff;
 }
-
 
 .left-side {
     font-size: 1.7rem;
-    margin-left: 10%;
+    margin-left: 8%;
 }
 
 .left-side a {
@@ -22,33 +27,35 @@
 .right-side {
     display: flex;
     align-items: center;
-    margin-right: 5%;
+    margin-right: 7%;
 }
 
-.navbar .right-side .nav-links ul {
-    list-style: none;
+.nav-links {
     display: flex;
     gap: 2rem;
     font-size: 0.8rem;
 }
 
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
 .link {
     text-decoration: none;
     color: #161616;
+    position: relative;
+    padding: 10px;
 }
 
 .link:hover {
     color: #333333;
 }
 
-.nav-links .link {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    position: relative;
-}
-
-.nav-links .link::after {
+.link::after {
     content: '';
     display: block;
     width: 0;
@@ -57,21 +64,19 @@
     transition: width 0.3s ease;
     position: absolute;
     bottom: 0;
-    margin-left: 7px;
+    left: 10px;
 }
 
-.nav-links .link:hover::after {
-    width: 100%;
+.link:hover::after {
+    width: 90%;
 }
-
 
 .hamburger-menu {
     display: none;
     cursor: pointer;
-    margin-left: auto;
 }
 
-@media(min-width:768px)and (max-width:830px) {
+@media (min-width: 768px) and (max-width: 830px) {
     .left-side {
         margin-left: 5%;
     }
@@ -82,45 +87,38 @@
         display: none;
     }
 
-    .navbar {
-        background-color: #fff;
-        width: 100%;
 
-    }
 
     .nav-links {
         display: none;
         position: absolute;
-        top: 99%;
         left: 0;
         background-color: #fff;
+        top: 50px;
         width: 100%;
         z-index: 10;
-    }
-
-    .nav-links.active {
-        display: block;
         flex-direction: column;
     }
 
-    .nav-links ul {
-        list-style: none;
-        padding: 0;
-        text-align: center;
+    .nav-links.active {
+        display: flex;
     }
 
-    .navbar .right-side .nav-links ul {
-        display: block;
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 0;
     }
 
     .nav-links ul li {
-        margin-bottom: 10px;
+        margin: 10px 0;
+        text-align: center;
     }
 
     .link {
-        text-decoration: none;
         color: #333;
-        padding: 10px;
         display: block;
     }
 
@@ -130,14 +128,11 @@
 
     .hamburger-menu {
         display: block;
-        cursor: pointer;
-        width: 100%;
-
-        padding: 10px;
     }
 
     .hamburger-menu svg {
         color: #333;
         font-size: 24px;
+        margin-left: 10px;
     }
 }
