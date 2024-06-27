@@ -1,6 +1,5 @@
 footer {
     position: absolute;
-    margin-top: 300px;
     bottom: 0;
     width: 100%;
 }
@@ -49,8 +48,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+
     .footer-container {
         padding: 15px 0;
+        margin-top: 300px;
+
     }
 
     .copyright {
