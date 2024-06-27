@@ -1,0 +1,79 @@
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    gap: 4rem;
+}
+
+.project-container {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 10px 12px 30px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 12px 30px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 12px 30px 0px rgba(0, 0, 0, 0.75);
+    background-color: #fff;
+}
+
+.upper-data {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-data img {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    object-fit: contain;
+}
+
+.lower-data {
+    width: 95%;
+    background-color: #222121;
+    color: white;
+    height: 100%;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.lower-data .heading {
+    text-decoration: underline;
+}
+
+.lower-data .heading,
+.git {
+    margin-left: 10px;
+}
+
+.git {
+    width: 7rem;
+    position: relative;
+    height: 2rem;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    transition: 0.8 ease-in-out;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.git:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+}
+
+.git a {
+    text-decoration: none;
+    color: #fff;
+}
