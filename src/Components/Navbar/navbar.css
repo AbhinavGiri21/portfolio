@@ -87,7 +87,9 @@
         display: none;
     }
 
-
+    .navbar {
+        height: 60px;
+    }
 
     .nav-links {
         display: none;
