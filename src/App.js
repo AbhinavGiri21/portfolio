@@ -4,17 +4,21 @@ import LandingPage from './Components/LandingPage/landingpage';
 import Footer from './Components/Footer/footer';
 import Contact from './Components/Contact/contact';
 import Project from './Components/Projects/project';
+import TransitionWrapper from './Components/Transition/transition';
 import './App.css';
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
-        <Routes>
-          <Route path='/' element={<LandingPage />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/projects' element={<Project />} />
-        </Routes>
+        <TransitionWrapper>
+          <Routes>
+            <Route path='/' element={<LandingPage />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/projects' element={<Project />} />
+          </Routes>
+        </TransitionWrapper>
         <Footer />
       </Router>
     </div>
