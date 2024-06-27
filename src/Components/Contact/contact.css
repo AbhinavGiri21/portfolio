@@ -81,10 +81,17 @@
 @media(max-width:768px) {
     .contact {
         margin-top: 40%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .contact-form .contact-title h2 {
+        font-size: 30px;
     }
 
     .contact-container {
         width: 400px;
+        height: 450px;
     }
 
     .contact-form {
