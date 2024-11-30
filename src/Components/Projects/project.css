@@ -5,6 +5,8 @@
     flex-wrap: wrap;
     margin-top: 10%;
     gap: 4rem;
+    padding-bottom: 150px;
+
 }
 
 .project-container {
