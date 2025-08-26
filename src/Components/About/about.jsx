@@ -73,7 +73,7 @@ const About = () => {
                             <li><b>Bachelor of Technology (2022-2026)</b></li>
                             <li>Computer Science and Engineering</li>
                             <li>UPES</li>
-                            <li>CGPA-7.59</li>
+                            <li>CGPA-7.88</li>
                             <br />
                             <li><b>Secondary School (2022)</b></li>
                             <li>The Tonsbridge School, Dehradun</li>
